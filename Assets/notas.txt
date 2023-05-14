@@ -1,0 +1,5 @@
+Para poder agregar interaccion a un objeto 3D agrega:
+    Rigidbody
+    InteractionBehaviour
+
+
