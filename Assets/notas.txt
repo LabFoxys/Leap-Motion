@@ -3,3 +3,10 @@ Para poder agregar interaccion a un objeto 3D agrega:
     InteractionBehaviour
 
 
+Las teclas para el jugador son:
+Espacio: Para mostrar u ocultar el cursor
+ASWD o flechas: Para moverse
+F: Para cambiar el modelo de la mano al anterior
+J: Para cambiar el modelo de la mano al siguiente
+Mouse: Para mover la camara
+M: Para hacer pequeño o grande al jugador
