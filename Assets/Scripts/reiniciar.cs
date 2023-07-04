@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class reiniciar : MonoBehaviour{
-    public void restart(){
+    public void restartMotor(){
         //Scene 
-        SceneManager.LoadScene( "LeapEscena" );
+        SceneManager.LoadScene( "MotorEnsamble" );
+    }
+    
+    public void restartCubeSat(){
+        //Scene 
+        SceneManager.LoadScene( "CubeSatEnsamble" );
     }
 }
