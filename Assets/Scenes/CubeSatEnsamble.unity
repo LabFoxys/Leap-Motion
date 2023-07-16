@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A7
+  textoInformativo: {fileID: 391329210}
 --- !u!114 &6472945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +257,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 6472944}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &6472946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,7 +1023,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 208766182}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &208766181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,6 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A1
+  textoInformativo: {fileID: 391329210}
 --- !u!1001 &306525331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1198,6 +1232,7 @@ MonoBehaviour:
   SistemaDeVuelo: {fileID: 1814969520}
   CargaUtil: {fileID: 127456172}
   terminado: 1
+  textoInformativo: {fileID: 391329210}
 --- !u!54 &332043990
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1255,7 +1290,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 332043989}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Electronica, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &332043992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1660,6 +1711,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A3
+  textoInformativo: {fileID: 0}
+--- !u!1 &391329206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391329207}
+  - component: {fileID: 391329209}
+  - component: {fileID: 391329208}
+  - component: {fileID: 391329210}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &391329207
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391329206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1088556729}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -10, y: -10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &391329208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391329206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 2
+    m_MaxSize: 20
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Potencia\r:\nEste subsistema transforma la energia solar en el\xE9ctrica
+    a trav\xE9s de paneles solares y baterias que se actian en lugares oscuros, donde
+    los paneles no pueden recargarlas.\r"
+--- !u!222 &391329209
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391329206}
+  m_CullTransparentMesh: 1
+--- !u!114 &391329210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391329206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 295b2d1bed44ddd48a23d96b2ec4caf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 391329208}
 --- !u!1001 &394619238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,6 +1985,7 @@ RectTransform:
   - {fileID: 743597253}
   - {fileID: 847698890}
   - {fileID: 120232782}
+  - {fileID: 1088556729}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3350,6 +3499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A3
+  textoInformativo: {fileID: 0}
 --- !u!1001 &671415028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3859,9 +4009,9 @@ RectTransform:
   m_Father: {fileID: 414443399}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -25}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -100, y: 25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847698891
@@ -4159,6 +4309,7 @@ MonoBehaviour:
   SistemaDeVuelo: {fileID: 671415029}
   CargaUtil: {fileID: 1305411425}
   terminado: 1
+  textoInformativo: {fileID: 0}
 --- !u!65 &953935511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4926,6 +5077,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A3
+  textoInformativo: {fileID: 0}
+--- !u!1 &1088556728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088556729}
+  - component: {fileID: 1088556731}
+  - component: {fileID: 1088556730}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1088556729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088556728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 391329207}
+  m_Father: {fileID: 414443399}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -37.5}
+  m_SizeDelta: {x: 0, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1088556730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088556728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1088556731
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088556728}
+  m_CullTransparentMesh: 1
 --- !u!1 &1112763935
 GameObject:
   m_ObjectHideFlags: 0
@@ -5163,7 +5392,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1114281835}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &1114281834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5199,6 +5444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: E3
+  textoInformativo: {fileID: 391329210}
 --- !u!1 &1127733601
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A3
+  textoInformativo: {fileID: 0}
 --- !u!23 &1218003322 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 94fe4bcff859599478c3caf235281fa3, type: 3}
@@ -5828,6 +6075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A3
+  textoInformativo: {fileID: 0}
 --- !u!1001 &1305411424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6244,6 +6492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A6
+  textoInformativo: {fileID: 391329210}
 --- !u!114 &1460401472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6274,7 +6523,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1460401471}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &1460401473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7126,6 +7391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A5
+  textoInformativo: {fileID: 391329210}
 --- !u!114 &1661301429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7156,7 +7422,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1661301428}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &1661301430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7478,7 +7760,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1704741556}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &1704741555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7514,6 +7812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A2
+  textoInformativo: {fileID: 391329210}
 --- !u!1 &1776077979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7719,6 +8018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A4
+  textoInformativo: {fileID: 391329210}
 --- !u!114 &1777668273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7749,7 +8049,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1777668272}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &1777668274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8991,7 +9307,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2138543314}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &2138543313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9027,6 +9359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: E2
+  textoInformativo: {fileID: 391329210}
 --- !u!1001 &2141233286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9195,7 +9528,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2141233293}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &2141233292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9231,6 +9580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: E1
+  textoInformativo: {fileID: 391329210}
 --- !u!1001 &2141643986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9334,6 +9684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: A3
+  textoInformativo: {fileID: 391329210}
 --- !u!114 &2141643990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9364,7 +9715,23 @@ MonoBehaviour:
   _noContactLayer:
     layerIndex: 0
   _eventTable:
-    _entries: []
+    _entries:
+    - enumValue: 142
+      callback:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2141643989}
+            m_TargetAssemblyTypeName: CubeSat.Scripts.Pieza, Assembly-CSharp
+            m_MethodName: mostrarInfo
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
 --- !u!114 &2141643991
 MonoBehaviour:
   m_ObjectHideFlags: 0

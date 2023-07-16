@@ -1,0 +1,23 @@
+﻿Bus o Chasis
+Estructura metálica que transporta todos los subsistemas del CubeSat.
+
+Control, estabilidad y direccion
+Baterias y magnetotorques, que junto con la rueda inercial o volante de inercia le dan dirección al CubeSat.
+
+Potencia
+Este subsistema transforma la energia solar en eléctrica a través de paneles solares y baterias que se actian en lugares oscuros, donde los paneles no pueden recargarlas.
+
+Computadora de vuelo
+Controla al satélite y almacena los datos
+
+Comunicaciones
+Las antenas se despliegan en órbita y envian la informacion a la computadora de vuelo para posterior análisis.
+
+Carga útil
+Es la instrumentación científica que captará y medirá las variables de interés.
+
+Antenas
+Permite la comunicación bidireccional entre el CubeSat y las estaciones terrestres.
+
+Paneles solares
+Transforman la energía solar en energía eléctrica.

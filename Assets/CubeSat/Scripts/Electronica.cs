@@ -10,6 +10,8 @@ namespace CubeSat.Scripts{
 
         public bool terminado = true;
 
+        public TextoInformativo textoInformativo;
+
         private void Start(){
             //Desactivate all the children
             for( int i = 0; i < transform.childCount; i++ ){
@@ -30,7 +32,7 @@ namespace CubeSat.Scripts{
 
             if( terminado ){
                 transform.GetComponent< BoxCollider >().isTrigger = false;
-                transform.GetComponent<Rigidbody>().isKinematic = false;
+                transform.GetComponent< Rigidbody >().isKinematic = false;
             }
         }
 
@@ -60,6 +62,10 @@ namespace CubeSat.Scripts{
                     default: break;
                 }
             }
+        }
+
+        public void mostrarInfo(){
+            textoInformativo.setTexto( "Conjunto de electrónica ensamblado" );
         }
     }
 
